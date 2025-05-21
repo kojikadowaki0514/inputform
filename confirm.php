@@ -42,16 +42,17 @@ $message  = $_POST["message"];
     </tr>
     <tr>
       <td>お問い合わせ種別</td>
-      <td><?php echo $category; ?>/td>
+      <td><?php echo $category; ?></td>
     </tr>
     <tr>
       <td>お問い合わせ内容</td>
-      <td><?php echo $message; ?>/td>
+      <td><?php echo $message; ?></td>
     </tr>
   </table>
 
   <p>
     <!-- ボタンをクリックされたときに、指定したページに遷移させる -->
+    <!-- location.hrefはページがリロードされる -->
     <button id="confirm-btn" onclick="location.href='complete.php';">確定</button>
     <!-- ボタンをクリックしたときに、前のページに戻る -->
     <!-- form.phpに戻っても入力された値は、ブラウザのキャッシュ機能により、保持されている（入力された値は消えない） -->
